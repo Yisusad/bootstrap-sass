@@ -3237,7 +3237,6 @@ tbody.collapse.show {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 .custom-select:focus {
@@ -6310,7 +6309,6 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -6330,9 +6328,8 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -8239,4 +8236,105 @@ h3 {
 .table-bordered td {
     border: 1px solid #ddd !important;
   }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.website-title {
+  font-family: "Shadows Into Light", sans-serif;
+  font-size: 50px;
+}
+
+a {
+  color: #6c757d;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #806a41;
+}
+.nav-link.active {
+  color: #806a41;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.products-masonry .card {
+  text-align: center;
+  border: none;
+  margin-bottom: 40px;
+}
+.products-masonry .card h5 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.products-masonry .card h5::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: #806a41;
+  margin: 15px auto 30px;
+}
+.products-masonry .card p {
+  color: #806a41;
+  font-weight: 500;
+}
+
+.featured-post {
+  min-height: 370px;
+}
+
+.featured-post-inner .featured-post-info {
+  background: rgba(33, 37, 41, 0.39);
+  color: #fff;
+  padding: 10px 35px;
+}
+.featured-post-inner .featured-post-info h4 {
+  font-size: 20px;
+}
+.featured-post-inner .featured-post-info p {
+  font-size: 14px;
+}
+.featured-post-inner .featured-post-info .post-meta {
+  font-size: 12px;
+}
+.featured-post-inner.featured-post-1 {
+  background-image: url("../img/post1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.featured-post-inner.featured-post-2 {
+  background-image: url("../img/post5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post h4 {
+  font-size: 18px;
+}
+.post h4::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #806a41;
+  margin-top: 10px;
+}
+.post p {
+  font-size: 14px;
+}
+.post .post-meta {
+  font-size: 12px;
 }
